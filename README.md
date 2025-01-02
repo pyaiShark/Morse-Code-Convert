@@ -1,4 +1,4 @@
-## MY PROJECT TITLE
+## PROJECT TITLE
 Morse Code Converter Web Application
 
 #### Description:
