@@ -1,5 +1,5 @@
 cs50
 flask
 flask_session
-werkzeug.security
+Werkzeug
 email_validator
