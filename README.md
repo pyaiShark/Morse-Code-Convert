@@ -25,7 +25,7 @@ Follow these steps to install and set up the Morse Conversion Web Application:
 
 1. **Clone the Repository**:
    ```bash
-   git clone <https://github.com/pyaiShark/Morse-Code-Convert.git>
+   git clone https://github.com/pyaiShark/Morse-Code-Convert.git
    cd morse_conversion_web_app
    ```
 
