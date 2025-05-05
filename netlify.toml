@@ -1,4 +1,4 @@
 [build]
-command = "uvicorn app:app"
+command = "uvicorn src.app:app"
 publish = "/"
 base = "/"
