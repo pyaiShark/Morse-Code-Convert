@@ -1,4 +1,4 @@
 [build]
-command = "flask run"
+command = "gunicorn app:app"
 publish = "/"
 base = "/"
