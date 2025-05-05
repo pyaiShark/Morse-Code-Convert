@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block head %}
+
+    <link rel="stylesheet" href="../static/form_styles.css">
+    <script src="../static/form_script.js"></script>
+
+{% endblock %}
+
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block main %}
+<div class="container mt-5">
+    <div class="card p-4 mx-auto" style="max-width: 400px;">
+        <h2 class="text-center mb-4">Login</h2>
+        <form action="/login" method="post" id="login_form">
+            <div class="mb-3">
+                <input autocomplete="off" class="form-control" name="usernameOrEmail" placeholder="Username or Email ID" type="text" required>
+            </div>
+            <div class="mb-3">
+                <input class="form-control" name="password" placeholder="Password" type="password" required minlength="6">
+            </div>
+            <button class="btn btn-primary w-100" type="submit">Login</button>
+        </form>
+        <a href="/forgot" style="margin-top: 1%;">Forgot Password</a>
+    </div>
+</div>
+{% endblock %}

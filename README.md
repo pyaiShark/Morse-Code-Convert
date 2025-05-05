@@ -100,4 +100,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 For any questions or feedback, please contact:
-- **Goutam Mandal**: [goutammandal01203@gmail.com]
+- **Goutam Mandal**: [goutammandal01203@gmail.com](mailto:your.email@example.com)
