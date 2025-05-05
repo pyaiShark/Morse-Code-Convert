@@ -1,3 +1,16 @@
+Metadata-Version: 2.1
+Name: morse-conversion-application
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: cs50>=9.4.0
+Requires-Dist: email-validator>=2.2.0
+Requires-Dist: flask>=3.0.3
+Requires-Dist: flask-session>=0.8.0
+Requires-Dist: uvicorn>=0.33.0
+Requires-Dist: werkzeug>=3.0.6
+
 # Morse Conversion Web Application Documentation
 
 ## Table of Contents
@@ -60,31 +73,30 @@ Follow these steps to install and set up the Morse Conversion Web Application:
 ## File Structure
 ```
 morse_conversion_web_app/
-├── src/
-   │
-   ├── static/                     # Contains static files
-   │   ├── form_script.js          # JavaScript for form-related scripts
-   │   ├── form_styles.css         # CSS for form-related styles
-   │   ├── icon.png                # Image file for the website icon
-   │   ├── navbar_script.js        # JavaScript for navigation bar scripts
-   │   ├── script.js               # JavaScript for handling file download
-   │   ├── style.css               # Main CSS file
-   │   └── type-script.js          # JavaScript for handling conversion type
-   │
-   ├── templates/                  # Contains HTML templates
-   │   ├── apology.html            # Apology page
-   │   ├── forgot.html             # Forgot password form
-   │   ├── history.html            # History page
-   │   ├── index.html              # Main index page
-   │   ├── layout.html             # Layout of the pages
-   │   ├── login.html              # Login form
-   │   └── register.html           # Registration form
-   │
-   ├── app.py                      # Main Flask application file
-   ├── converter.py                # Data conversion logic (Morse, text)
-   ├── database.db                 # Database file
-   ├── helpers.py                  # Helper functions for error handling
-   └── requirements.txt            # Project requirements
+│
+├── static/                     # Contains static files
+│   ├── form_script.js          # JavaScript for form-related scripts
+│   ├── form_styles.css         # CSS for form-related styles
+│   ├── icon.png                # Image file for the website icon
+│   ├── navbar_script.js        # JavaScript for navigation bar scripts
+│   ├── script.js               # JavaScript for handling file download
+│   ├── style.css               # Main CSS file
+│   └── type-script.js          # JavaScript for handling conversion type
+│
+├── templates/                  # Contains HTML templates
+│   ├── apology.html            # Apology page
+│   ├── forgot.html             # Forgot password form
+│   ├── history.html            # History page
+│   ├── index.html              # Main index page
+│   ├── layout.html             # Layout of the pages
+│   ├── login.html              # Login form
+│   └── register.html           # Registration form
+│
+├── app.py                      # Main Flask application file
+├── converter.py                # Data conversion logic (Morse, text)
+├── database.db                 # Database file
+├── helpers.py                  # Helper functions for error handling
+└── requirements.txt            # Project requirements
 ```
 
 ## Contributing
@@ -100,4 +112,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 For any questions or feedback, please contact:
-- **Goutam Mandal**: [goutammandal01203@gmail.com](mailto:your.email@example.com)
+- **Goutam Mandal**: [goutammandal01203@gmail.com]
