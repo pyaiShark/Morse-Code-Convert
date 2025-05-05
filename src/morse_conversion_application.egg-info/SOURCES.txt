@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/app.py
+src/converter.py
+src/helpers.py
+src/morse_conversion_application.egg-info/PKG-INFO
+src/morse_conversion_application.egg-info/SOURCES.txt
+src/morse_conversion_application.egg-info/dependency_links.txt
+src/morse_conversion_application.egg-info/requires.txt
+src/morse_conversion_application.egg-info/top_level.txt

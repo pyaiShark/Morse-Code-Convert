@@ -1,0 +1,14 @@
+[project]
+name = "morse-conversion-application"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "cs50>=9.4.0",
+    "email-validator>=2.2.0",
+    "flask>=3.0.3",
+    "flask-session>=0.8.0",
+    "uvicorn>=0.33.0",
+    "werkzeug>=3.0.6",
+]

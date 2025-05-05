@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block title %}
+History
+{% endblock %}
+
+{% block main %}
+<table class="table">
+    <thead>
+        <tr>
+            <th class="text-start">History</th>
+            <th class="text-end">Morse File</th>
+            <th class="text-end">Text File</th>
+            <th class="text-end">Created At</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for history in historys %}
+        <tr>
+            <td class="text-start">{{ loop.index }}</td>
+            <td class="text-end">
+                {% if history.morse_file_url %}
+                    {{ history.morse_file_url | filename }}
+                    <a href="{{ url_for('download_file', filename=history.morse_file_url) }}" download>
+                        <div>
+                            <button type="button" class="btn btn-success" aria-label="Download Morse File">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-down-square-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0">
+                                    </path>
+                                </svg>
+                                Download File
+                            </button>
+                        </div>
+                    </a>
+                    {% else %}
+                        {{ "No file available" }}
+                    {% endif %}
+                </td>
+
+            <td class="text-end">
+                {% if history.text_file_url %}
+                    {{ history.text_file_url | filename }}
+                <a href="{{ url_for('download_file', filename=history.text_file_url) }}" download>
+                    <div>
+                        <button type="button" class="btn btn-success" aria-label="Download Text File">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-down-square-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0">
+                                </path>
+                            </svg>
+                            Download File
+                        </button>
+                    </div>
+                </a>
+                {% else %}
+                    {{ "No file available" }}
+                {% endif %}
+            </td>
+            <td class="text-end">{{ history.created_at }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
