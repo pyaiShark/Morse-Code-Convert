@@ -45,7 +45,7 @@ Follow these steps to install and set up the Morse Conversion Web Application:
 
 5. **Run the Application**:
    ```bash
-   uvicorm app:app
+   gunicorm app:app
    ```
 
 6. **Access the Application**:
